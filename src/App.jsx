@@ -20,7 +20,6 @@ function getInitialTheme() {
 
 export default function App() {
   const [theme, setTheme] = useState(getInitialTheme);
-  const [hasAvocado, setHasAvocado] = useState(false);
   const isDark = theme === 'dark';
 
   useEffect(() => {
@@ -82,8 +81,6 @@ export default function App() {
                 type="checkbox"
                 name="toppings"
                 value="avocado"
-                checked={hasAvocado}
-                onChange={event => setHasAvocado(event.target.checked)}
               />
               <span>Avocado</span>
               <span aria-label="Upcharge of $2.00" className={styles.upcharge}>+$2.00</span>
