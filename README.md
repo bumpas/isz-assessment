@@ -116,3 +116,11 @@ Runs SVGO on all files in `src/icons` with the same core behavior as runtime con
 
 - `src/styles/tokens.css` is generated. Update `tokens.json` and run `npm run tokens` instead of editing CSS by hand.
 - `npm run icons` mutates SVG files in-place in `src/icons`.
+
+
+## Todo
+- A11y more semantic grouping for checkbox and radio usage and componetize
+- A11y icon review
+- Icon bowl visual issue from light mode to dark mode
+- JSON mock data for full menu items once compoentized
+
