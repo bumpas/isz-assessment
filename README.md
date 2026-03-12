@@ -123,4 +123,5 @@ Runs SVGO on all files in `src/icons` with the same core behavior as runtime con
 - A11y icon review
 - Icon bowl visual issue from light mode to dark mode
 - JSON mock data for full menu items once compoentized
+- spacing tokens
 
