@@ -1,5 +1,7 @@
 # Assessment
 
+Live deployment: https://isz-assessment.vercel.app/
+
 A small React + Vite UI prototype for building a custom bowl.
 
 The app includes:
