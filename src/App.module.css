@@ -56,8 +56,12 @@ section {
 }
 
 .optionLabel {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.5rem;
   font: var(--type-body);
+}
+
+.upcharge {
+  margin-left: auto;
 }

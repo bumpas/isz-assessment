@@ -83,7 +83,7 @@ export default function App() {
                 value="avocado"
               />
               <span>Avocado</span>
-              <span aria-label="Upcharge of $2.00" className={styles.upcharge}>+$2.00</span>
+              <span aria-label="Upcharge of $2.00" className={styles.upcharge}>+$2</span>
             </label>
           </div>
         </Accordion>
