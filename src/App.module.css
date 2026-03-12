@@ -49,9 +49,6 @@ nav {
 
 section {
   width: min(640px, 100%);
-  padding: 1rem;
-  border-radius: 8px;
-  background-color: var(--color-surface);
 }
 
 .optionRow {
