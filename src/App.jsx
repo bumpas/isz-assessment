@@ -8,7 +8,6 @@ import SunIcon from './icons/sun.svg?react';
 import MoonIcon from './icons/moon.svg?react';
 
 const THEME_STORAGE_KEY = 'theme';
-const AVOCADO_UPCHARGE = 2;
 
 function getInitialTheme() {
   const storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
@@ -23,7 +22,6 @@ export default function App() {
   const [theme, setTheme] = useState(getInitialTheme);
   const [hasAvocado, setHasAvocado] = useState(false);
   const isDark = theme === 'dark';
-  const upcharge = AVOCADO_UPCHARGE;
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -88,8 +86,8 @@ export default function App() {
                 onChange={event => setHasAvocado(event.target.checked)}
               />
               <span>Avocado</span>
+              <span aria-label="Upcharge of $2.00" className={styles.upcharge}>+$2.00</span>
             </label>
-            <span className={styles.upcharge}>+${upcharge.toFixed(2)}</span>
           </div>
         </Accordion>
         <Accordion title="Sauce">

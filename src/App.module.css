@@ -64,9 +64,3 @@ section {
   gap: 0.5rem;
   font: var(--type-body);
 }
-
-.upcharge {
-  margin-left: 0.25rem;
-  color: var(--color-action);
-  font: var(--type-body);
-}
