@@ -19,6 +19,12 @@ export default defineConfig({
               },
             },
             'removeDimensions',
+            {
+              name: 'removeAttrs',
+              params: {
+                attrs: '(path|circle|ellipse|polygon|polyline|rect|g):fill',
+              },
+            },
           ],
         },
       },

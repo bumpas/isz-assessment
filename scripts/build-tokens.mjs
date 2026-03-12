@@ -37,17 +37,30 @@ function typographyToVars(type) {
   return vars.join('\n')
 }
 
+const lightThemeVars = themeToVars(light)
+const darkThemeVars = Object.entries(dark)
+  .map(([k, v]) => `    --color-${k}: ${v};`)
+  .join('\n')
+
 const css = `/* Generated from tokens.json — do not edit manually */
 
 :root {
-${themeToVars(light)}
+${lightThemeVars}
 ${typographyToVars(typography)}
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-${Object.entries(dark).map(([k, v]) => `    --color-${k}: ${v};`).join('\n')}
+${darkThemeVars}
   }
+}
+
+:root[data-theme='light'] {
+${lightThemeVars}
+}
+
+:root[data-theme='dark'] {
+${darkThemeVars}
 }
 `
 

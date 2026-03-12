@@ -19,6 +19,12 @@ const svgoConfig = {
     },
     // Remove fixed width/height; CSS controls icon sizing.
     'removeDimensions',
+    {
+      name: 'removeAttrs',
+      params: {
+        attrs: '(path|circle|ellipse|polygon|polyline|rect|g):fill',
+      },
+    },
   ],
 }
 
