@@ -56,7 +56,7 @@ export default function App() {
         <h1 className={styles.heading}>Build a Bowl</h1>
       </header>
       <section>
-        <Accordion title="Base">
+        <Accordion name="menu" title="Base">
           <p>Choose your base</p>
           <div className={styles.optionRow}>
             <label className={styles.optionLabel}>
@@ -65,7 +65,7 @@ export default function App() {
             </label>
           </div>
         </Accordion>
-        <Accordion title="Protein">
+        <Accordion name="menu" title="Protein">
           <p>Choose your protein</p>
           <div className={styles.optionRow}>
             <label className={styles.optionLabel}>
@@ -74,7 +74,7 @@ export default function App() {
             </label>
           </div>
         </Accordion>
-        <Accordion title="Toppings">
+        <Accordion name="menu" title="Toppings">
           <p>Choose your toppings</p>
           <div className={styles.optionRow}>
             <label className={styles.optionLabel}>
@@ -90,7 +90,7 @@ export default function App() {
             </label>
           </div>
         </Accordion>
-        <Accordion title="Sauce">
+        <Accordion name="menu" title="Sauce">
           <p>Choose your sauce</p>
           <div className={styles.optionRow}>
             <label className={styles.optionLabel}>
