@@ -15,6 +15,16 @@ function themeToVars(theme) {
     .join('\n')
 }
 
+function fontSizeToRem(value) {
+  if (typeof value !== 'string') return value
+  if (!value.endsWith('px')) return value
+
+  const pixels = Number.parseFloat(value)
+  if (Number.isNaN(pixels)) return value
+
+  return `${pixels / 16}rem`
+}
+
 function typographyToVars(type) {
   if (!type) return ''
 
@@ -24,7 +34,7 @@ function typographyToVars(type) {
   for (const [name, scale] of Object.entries(type)) {
     if (name === 'fontFamily') continue
     scaleNames.push(name)
-    vars.push(`  --type-${name}-size: ${scale.fontSize};`)
+    vars.push(`  --type-${name}-size: ${fontSizeToRem(scale.fontSize)};`)
     vars.push(`  --type-${name}-line-height: ${scale.lineHeight};`)
   }
 
