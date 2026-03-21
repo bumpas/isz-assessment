@@ -25,17 +25,7 @@ h2 {
   cursor: pointer;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  min-height: 100dvh;
-  color: var(--color-content);
-  padding-left: 2rem;
-  padding-right: 2rem;
-} 
-
-nav {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,8 +36,9 @@ nav {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  padding-left: inherit;
-  padding-right: inherit; 
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
 
   a {
     color: var(--color-content);
@@ -55,16 +46,19 @@ nav {
   }
 }
 
-header {
-  align-self: flex-start;
-}
-
-section {
-  width: 100%;
-}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 100dvh;
+  color: var(--color-content);
+  padding-left: 2rem;
+  padding-right: 2rem;
+} 
 
 .optionRow {
   margin-top: 0.5rem;
+  border: none;
 }
 
 .optionLabel {
