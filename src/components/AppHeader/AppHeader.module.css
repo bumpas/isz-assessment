@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
   padding-left: var(--space-lg);
   padding-right: var(--space-lg);
   margin-bottom: var(--space-lg);
@@ -13,6 +15,7 @@
 .logoLink {
   color: var(--color-content);
   text-decoration: none;
+  line-height: 0; /* Fixes vertical alignment of the logo icon */
 }
 
 .themeToggle {

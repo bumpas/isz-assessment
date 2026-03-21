@@ -16,7 +16,7 @@ export function AppHeader({ isDark, onToggleTheme }) {
         aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
         onClick={onToggleTheme}
       >
-        <Icon as={isDark ? MoonIcon : SunIcon} size={24} />
+        <Icon as={isDark ? MoonIcon : SunIcon} size={32} />
       </button>
     </header>
   );
