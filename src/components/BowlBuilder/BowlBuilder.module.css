@@ -1,13 +1,13 @@
 .builder {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--space-lg);
 }
 
 .heading {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--space-xs);
   font: var(--type-header);
 }
 

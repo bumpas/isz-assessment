@@ -7,7 +7,7 @@ const root = resolve(__dirname, '..')
 
 const tokens = JSON.parse(readFileSync(resolve(root, 'tokens.json'), 'utf-8'))
 const { light, dark } = tokens.theme
-const { typography } = tokens
+const { typography, spacing } = tokens
 
 function themeToVars(theme) {
   return Object.entries(theme)
@@ -47,6 +47,14 @@ function typographyToVars(type) {
   return vars.join('\n')
 }
 
+function spacingToVars(scale) {
+  if (!scale) return ''
+
+  return Object.entries(scale)
+    .map(([name, value]) => `  --space-${name}: ${fontSizeToRem(value)};`)
+    .join('\n')
+}
+
 const lightThemeVars = themeToVars(light)
 const darkThemeVars = Object.entries(dark)
   .map(([k, v]) => `    --color-${k}: ${v};`)
@@ -57,6 +65,7 @@ const css = `/* Generated from tokens.json — do not edit manually */
 :root {
 ${lightThemeVars}
 ${typographyToVars(typography)}
+${spacingToVars(spacing)}
 }
 
 @media (prefers-color-scheme: dark) {

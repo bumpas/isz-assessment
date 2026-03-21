@@ -6,13 +6,13 @@
 }
 
 .accordion + .accordion {
-  margin-top: 0.75rem;
+  margin-top: var(--space-md);
 }
 
 .summary {
   cursor: pointer;
   list-style: none;
-  padding: 1rem;
+  padding: var(--space-md);
   font: var(--type-subheader);
   color: var(--color-content);
   user-select: none;
@@ -38,7 +38,7 @@
 }
 
 .content {
-  padding: 1rem;
+  padding: var(--space-md);
   font: var(--type-body);
   color: var(--color-content);
   background-color: var(--color-background);

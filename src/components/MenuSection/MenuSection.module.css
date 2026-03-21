@@ -1,5 +1,5 @@
 .fieldset {
-  margin-top: 0.5rem;
+  margin-top: var(--space-xs);
 }
 
 .legend {
@@ -10,8 +10,8 @@
 .optionLabel {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
   font: var(--type-body);
 }
 

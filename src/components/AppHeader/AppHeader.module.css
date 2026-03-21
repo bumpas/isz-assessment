@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-bottom: 2rem;
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
+  margin-bottom: var(--space-lg);
   color: var(--color-content);
   background-color: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
@@ -19,8 +19,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
   border: none;
   background-color: transparent;
   color: var(--color-content);
