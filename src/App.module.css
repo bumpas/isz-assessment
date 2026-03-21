@@ -1,28 +1,16 @@
 body {
   font-family: var(--font-family);
+  background-color: var(--color-background);
 }
 
 h1 {
   font: var(--type-header);
+  line-height: 1; 
+  margin-top: 1rem;
 }
 
 h2 {
   font: var(--type-subheader);
-}
-
-nav {
-  display: flex;
-  padding: 0.5rem 2rem;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  color: var(--color-content);
-  background-color: var(--color-surface);
-
-  a {
-    color: var(--color-content);
-    text-decoration: none;
-  }
 }
 
 .themeToggle {
@@ -37,18 +25,42 @@ nav {
   cursor: pointer;
 }
 
-.main {
+main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
   min-height: 100dvh;
-  background-color: var(--color-background);
   color: var(--color-content);
+  padding-left: 2rem;
+  padding-right: 2rem;
+} 
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  color: var(--color-content);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: inherit;
+  padding-right: inherit; 
+
+  a {
+    color: var(--color-content);
+    text-decoration: none;
+  }
+}
+
+header {
+  align-self: flex-start;
 }
 
 section {
-  width: min(640px, 100%);
+  width: 100%;
 }
 
 .optionRow {
