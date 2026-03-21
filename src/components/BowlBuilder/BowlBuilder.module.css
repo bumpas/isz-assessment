@@ -1,0 +1,17 @@
+.builder {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font: var(--type-header);
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+}

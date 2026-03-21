@@ -1,73 +1,14 @@
-body {
+.page {
   font-family: var(--font-family);
   background-color: var(--color-background);
-}
-
-h1 {
-  font: var(--type-header);
-  line-height: 1; 
-  margin-top: 1rem;
-}
-
-h2 {
-  font: var(--type-subheader);
-}
-
-.themeToggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: none;
-  background-color: transparent;
   color: var(--color-content);
-  cursor: pointer;
+  min-height: 100dvh;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  color: var(--color-content);
-  background-color: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-bottom: 2rem;
-
-  a {
-    color: var(--color-content);
-    text-decoration: none;
-  }
-}
-
-main {
+.main {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  min-height: 100dvh;
-  color: var(--color-content);
   padding-left: 2rem;
   padding-right: 2rem;
-} 
-
-.optionRow {
-  margin-top: 0.5rem;
-  border: none;
-}
-
-.optionLabel {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font: var(--type-body);
-}
-
-.upcharge {
-  margin-left: auto;
+  padding-bottom: 2rem;
 }
